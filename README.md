@@ -29,7 +29,7 @@ https://finance.yahoo.com/
 
 ### About the Dataset:
 - The dataset has no null values.
-- Isolation forest used to detect the anomalies in the dataset for given date range.
+- Isolation forest used to detect the anomalies in the dataset for given date range.</br>
 **Note**: Anomaly Detection gives an idea about the destribution of the dataset and how can we treat them. If the ratio of these anomalies are higher, we must treat them with proper method and avoid simply ignoring them.
 - Log Transformation and First Difference is applied to reduce the variance in the dataset.
 
