@@ -6,6 +6,16 @@ The aim of this project is to analyze the Bitcoin price time series data and pre
 
 ![image](https://user-images.githubusercontent.com/68314057/234961026-71cd181a-23a2-494c-9852-6eef40ac70b3.png)
 
+### Dependecies:
+- pandas
+- numpy
+- yfinance
+- datetime
+- seaborn
+- matplotlib
+- statsmodel
+- sklearn
+
 ### Packages used:
 
 - **Machine Learning**: sklearn, statsmodel
@@ -22,6 +32,9 @@ https://finance.yahoo.com/
 - Isolation forest used to detect the anomalies in the dataset for given date range.
 **Note**: Anomaly Detection gives an idea about the destribution of the dataset and how can we treat them. If the ratio of these anomalies are higher, we must treat them with proper method and avoid simply ignoring them.
 - Log Transformation and First Difference is applied to reduce the variance in the dataset.
+
+### Forecasts:
+ARIMA and Double Exponential Smoothing (DES) models are used for predicting and forecasting the price. The results are analysed using MAE, MSE and RMSE performance metrics.
 
 ### Future Work: 
 Create prompt for user input to select the start and end date of the historical data.
