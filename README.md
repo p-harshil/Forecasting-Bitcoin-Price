@@ -1,24 +1,31 @@
-# Time-Series-Analysis-of-Bitcoin-Price
+# Time Series Analysis of Bitcoin Price
 ### Overview:
-Bitcoin price is a time series data over specific time downloaded from yahoo finance data. The main aim of this project is to catch the bitcoin price volatility and predict the future price using ARIMA model.
+The aim of this project is to analyze the Bitcoin price time series data and predict future prices using time series forecasting models. The data is downloaded from Yahoo Finance and contains daily information on Bitcoin's open, high, low, close, adjusted close, and volume columns.
 
-### Libraries Required:
-- pandas
-- numpy
-- yfinance
-- datetime
-- seaborn
-- matplotlib
-- statsmodel
-- sklearn
+#### Screenshot of the Bitcoin Historical Data:
+
+![image](https://user-images.githubusercontent.com/68314057/234961026-71cd181a-23a2-494c-9852-6eef40ac70b3.png)
+
+### Packages used:
+
+- **Machine Learning**: sklearn, statsmodel
+- **Data Manipulation**: pandas, numpy, datetime
+- **Data Visualization**: matplotlib, seaborn
+- **Data Import**: yfinance
 
 ### Data Sources:
+The data used in this project is sourced from Yahoo Finance. It is important to note that the Close column is used to compute returns and the value predicted is also the Close value.
 https://finance.yahoo.com/
 
 ### About the Dataset:
-For bitcoin, the data shows 'Open', 'High', 'Low', 'Close', 'Adj Close' and 'Volume' columns. Here, 'Close' values are used to compute returns and the value predicted is same too.
-We have used isolation forest algorithm to detect the anomalies in the daily closing price for the selected time span. This gives us an idea about the destribution of the dataset and how can we treat them. If the ratio of these anomalies are higher, we must treat them with proper method and avoid simply ignoring them.
-
+- The dataset has no null values.
+- Isolation forest used to detect the anomalies in the dataset for given date range.
+**Note**: Anomaly Detection gives an idea about the destribution of the dataset and how can we treat them. If the ratio of these anomalies are higher, we must treat them with proper method and avoid simply ignoring them.
+- Log Transformation and First Difference is applied to reduce the variance in the dataset.
 
 ### Future Work: 
-To forecast the price with better accuracy, more macroeconomics variables must be used as well. Here we have not taken 'T-bill' rate into the account. 
+Create prompt for user input to select the start and end date of the historical data.
+To forecast the price with better accuracy, more macroeconomic variables must be used as well. In this project, T-bill rate is not taken into account. 
+
+### Instructions:
+To run this project, the required libraries must be installed. The data is already included in the project via yfinance, but if you want to use more recent data, you must change the date to download it from Yahoo Finance.
